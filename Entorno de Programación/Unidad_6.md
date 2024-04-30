@@ -46,7 +46,11 @@ En total hay 3 carpetas (ocultas por empezar con ".").
 
 ### 6.48
 
-En el caso de que exista una carpeta con el nombre "cd".
+En el caso de que exista una carpestra la fecha y horario de hoy.
+* `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
+
+
+### 6.12ta con el nombre "cd".
 
 
 ### 6.49
@@ -58,7 +62,7 @@ En el caso de que exista una carpeta con el nombre "cd".
 
 El error surge por el hecho de querer eliminar un directorio no vacío con un comando que __solo__ elimina directorios vacíos. 
 
-Una Solución a esto podría ser:
+Una solución a esto podría ser:
 ```
 mkdir carpeta
 touch carpeta/archivo
@@ -68,4 +72,50 @@ rm -r carpeta
 
 ### 6.51
 
+El error surge a partir de querer eliminar un archivo con el comando `rmdir`, el cual solo elimina directorios vacíos.
 
+Una solución a esto puede ser lo siguiente:
+
+```
+mkdir carpeta
+rmdir carpeta
+```
+
+
+### 6.52
+
+El error está en intentar crear un directorio vacío dentro de un directorio que no existe. 
+
+Una Solución puede ser:
+
+```
+mkdir carpeta1
+mkdria carpeta1/carpeta2
+```
+
+
+### 6.53
+
+El comando fue:
+```
+rm archivo
+```
+
+Para evitar la confirmación se podría usar el comando 
+```
+rm -f archivo
+```
+
+
+### 6.54
+
+```
+touch argentina
+mkdir francia
+mkdir semi1
+touch semi1/argentina
+touch semi/croacia
+mkdir semi2
+touch semi2/francia
+touch semi2/marruecos
+tree
