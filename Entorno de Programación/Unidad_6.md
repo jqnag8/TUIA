@@ -5,7 +5,7 @@
 * `date` muestra la fecha y horario de hoy.
 * `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
 
-
+f
 ### 6.12
 
 * __CTRL-A__: inicio del comando.
@@ -148,6 +148,71 @@ cp -r semi2 /.../directorio_nuevo/semi2v2
 
 ### 6.59
 
+Montaje del pendrive:
 ```
 lsblk
+mkdir /home/_usr_/Desktop prueba
+mount /dev/sdb1 /home/_usr_/Desktop/prueba
 ```
+Desmontaje del pendrive:
+```
+umount /home/_usr_/Desktop/prueba
+```
+
+### 6.60
+
+Para buscar archivos modificados la seman pasada, se puede utilizar la opción `-mtime`.
+
+`find -type f -mtime -7`
+
+Siendo `-7` la opción que indica que debe buscar archivos que tengan una modificación menor a 7 días.
+
+
+### 6.61
+
+???
+
+
+### 6.62
+
+`rm *.*{#,~}`
+
+
+### 6.63
+
+elimina todos los archivos con la extensión `.txti`
+
+
+### 6.64
+
+```
+cd /bin
+ls ??
+ar  bc  cp  dd  du  ex  hd  ip  ln  ls  mv  nl  od  ps  sg  ss  tr  ul  wc
+as  cc  dc  df  ed  gs  id  ld  lp  mt  nc  nm  pr  rm  sh  su  ua  vi  xz
+```
+
+
+### 6.65
+
+`touch {1..30}-{1..12}`
+
+
+### 6.66
+
+El error está en que el comando `rm` no eliminó el archivo .archivo2 porque está oculto.
+
+Una solución a esto es:
+```
+rm .archivo2
+```
+Indicando que borre el archivo oculto
+
+
+### 6.67
+
+El comando que nos permite ver archvos ocultos en un directorio es `ls -a`
+
+
+### 6.68
+
