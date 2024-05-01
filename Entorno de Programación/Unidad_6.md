@@ -46,11 +46,8 @@ En total hay 3 carpetas (ocultas por empezar con ".").
 
 ### 6.48
 
-En el caso de que exista una carpestra la fecha y horario de hoy.
+En el caso de que exista una directorio la fecha y horario de hoy.
 * `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
-
-
-### 6.12ta con el nombre "cd".
 
 
 ### 6.49
@@ -97,25 +94,60 @@ mkdria carpeta1/carpeta2
 ### 6.53
 
 El comando fue:
-```
-rm archivo
-```
+`rm archivo`
+
 
 Para evitar la confirmación se podría usar el comando 
-```
-rm -f archivo
-```
+`rm -f archivo`
+
 
 
 ### 6.54
 
 ```
+mkdir cuartos
+cd cuartos
 touch argentina
 mkdir francia
 mkdir semi1
 touch semi1/argentina
-touch semi/croacia
+touch semi1/croacia
 mkdir semi2
 touch semi2/francia
 touch semi2/marruecos
 tree
+```
+
+
+### 6.55
+
+```
+mkdir directorio_nuevo
+cd /.../cuartos/
+cp argentina /.../directorio_nuevo/argentinav2
+cp francia /.../directorio_nuevo/franciav2
+cp -r semi1 /.../directorio_nuevo/semi1v2
+cp -r semi2 /.../directorio_nuevo/semi2v2
+```
+
+
+### 6.56
+
+`rm -rf directorio_nuevo cuartos`
+
+### 6.57
+
+- `-u` copia solo cuando el archivo fuente es mas nuevo que el destino o cuando el destino esta perdido.
+
+- `-b` como backup, pero no admite argumentos.
+
+### 6.58
+
+`readlink` imprime el valor de un enlace simbolico o duro.
+
+
+### 6.59
+
+```
+lsblk
+```
