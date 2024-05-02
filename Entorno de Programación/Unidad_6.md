@@ -1,12 +1,18 @@
 # Parte II (Manejo de Bash)
+
 ## Ejercicios de Unidad 6
 
-### 6.11
+
+
+### Comandos Básicos
+
+#### 6.11
+
 * `date` muestra la fecha y horario de hoy.
 * `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
 
-f
-### 6.12
+
+#### 6.12
 
 * __CTRL-A__: inicio del comando.
 * __CTRL-E__: fin del comando.
@@ -15,7 +21,10 @@ f
 * __CTRL-W__: Opuesto a CTRL-K, elimina de adelante hacia atras.
 
 
-### 6.43
+
+### Sistema de Archivos
+
+#### 6.43
 
 * `-g` muestra la lista sin el apartado de dueño.
 * `-f` muestra el contenido de los directorios de manera recursiva.
@@ -23,39 +32,39 @@ f
 * `-s` ordena por tamaño de uso en disco.
 
 
-### 6.44
+#### 6.44
 
 `cd /bin` → `ls -h`
 
 
-### 6.45 
+#### 6.45 
 
 `stat` es un comando que imprime por pantalla las propiedades de uns sistema de archivos o un archivo.
 
 
-### 6.46
+#### 6.46
 
 El comando `cd carpeta` da error porque _carpeta_ es un archivo, no un directorio. 
 Al usar `ls -log` vemos que en el apartado de los permisos, _carpeta_ resulta `-rw-r--r--`, siendo el primer símbolo un "-" refiriendose a que es un archivo. Para que sea directorio, debe imprimir "d" como primer símbolo.
 
 
-### 6.47
+#### 6.47
 
 En total hay 3 carpetas (ocultas por empezar con ".").
 
 
-### 6.48
+#### 6.48
 
 En el caso de que exista una directorio la fecha y horario de hoy.
 * `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
 
 
-### 6.49
+#### 6.49
 
 `mkdir prueba` → `rmdir prueba` 
  
 
-### 6.50
+#### 6.50
 
 El error surge por el hecho de querer eliminar un directorio no vacío con un comando que __solo__ elimina directorios vacíos. 
 
@@ -67,7 +76,7 @@ rm -r carpeta
 ```
 
 
-### 6.51
+#### 6.51
 
 El error surge a partir de querer eliminar un archivo con el comando `rmdir`, el cual solo elimina directorios vacíos.
 
@@ -79,7 +88,7 @@ rmdir carpeta
 ```
 
 
-### 6.52
+#### 6.52
 
 El error está en intentar crear un directorio vacío dentro de un directorio que no existe. 
 
@@ -91,7 +100,7 @@ mkdria carpeta1/carpeta2
 ```
 
 
-### 6.53
+#### 6.53
 
 El comando fue:
 `rm archivo`
@@ -102,7 +111,7 @@ Para evitar la confirmación se podría usar el comando
 
 
 
-### 6.54
+#### 6.54
 
 ```
 mkdir cuartos
@@ -119,7 +128,7 @@ tree
 ```
 
 
-### 6.55
+#### 6.55
 
 ```
 mkdir directorio_nuevo
@@ -131,22 +140,22 @@ cp -r semi2 /.../directorio_nuevo/semi2v2
 ```
 
 
-### 6.56
+#### 6.56
 
 `rm -rf directorio_nuevo cuartos`
 
-### 6.57
+#### 6.57
 
 - `-u` copia solo cuando el archivo fuente es mas nuevo que el destino o cuando el destino esta perdido.
 
 - `-b` como backup, pero no admite argumentos.
 
-### 6.58
+#### 6.58
 
 `readlink` imprime el valor de un enlace simbolico o duro.
 
 
-### 6.59
+#### 6.59
 
 Montaje del pendrive:
 ```
@@ -159,7 +168,7 @@ Desmontaje del pendrive:
 umount /home/_usr_/Desktop/prueba
 ```
 
-### 6.60
+#### 6.60
 
 Para buscar archivos modificados la seman pasada, se puede utilizar la opción `-mtime`.
 
@@ -168,22 +177,22 @@ Para buscar archivos modificados la seman pasada, se puede utilizar la opción `
 Siendo `-7` la opción que indica que debe buscar archivos que tengan una modificación menor a 7 días.
 
 
-### 6.61
+#### 6.61
 
 ???
 
 
-### 6.62
+#### 6.62
 
 `rm *.*{#,~}`
 
 
-### 6.63
+#### 6.63
 
-elimina todos los archivos con la extensión `.txti`
+Elimina todos los archivos con la extensión `.txt`
 
 
-### 6.64
+#### 6.64
 
 ```
 cd /bin
@@ -193,12 +202,12 @@ as  cc  dc  df  ed  gs  id  ld  lp  mt  nc  nm  pr  rm  sh  su  ua  vi  xz
 ```
 
 
-### 6.65
+#### 6.65
 
 `touch {1..30}-{1..12}`
 
 
-### 6.66
+#### 6.66
 
 El error está en que el comando `rm` no eliminó el archivo .archivo2 porque está oculto.
 
@@ -209,10 +218,22 @@ rm .archivo2
 Indicando que borre el archivo oculto
 
 
-### 6.67
+#### 6.67
 
 El comando que nos permite ver archvos ocultos en un directorio es `ls -a`
 
 
-### 6.68
+#### 6.68
+
+* `pushd` Agrega sistemas de archivos al stack
+* `popd` Elimina el primer sistema de archivos del stack
+* `dirs` Invierte el stack
+
+
+
+### Contenido y Filtros
+
+
+#### 
+
 
