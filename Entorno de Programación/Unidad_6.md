@@ -244,7 +244,43 @@ cat archivo.txt
 ##### 6.94
 
 * Empezar por final puede ser confuso.
-* No tener algún tipo de índice para buscar lo requerido, sin tener que scrollear un archivo entero.
+* No tener algún tispo de índice para buscar lo requerido, sin tener que scrollear un archivo entero.
+Falta propuesta de solución
+
+##### 6.95
+
+`head --lines=-3 archivo.txt`
+
+
+##### 6.96
+
+```
+touch archivo.txt
+tail -f archivo.txt
+```
+
+Luego hago cambios de ese archivo con otra aplición, y cuando guardo los cambios, aparecen en la terminal.
+
+
+##### 6.97
+
+El comando `uniq` no muestra palabras repetidas porque las líneas repetidas no son consecutivas.
+
+
+###### 6.98
+
+No entendí como funciona strings. Devuelve texto sin sentido. Si uso `file` si puede ver la cámara.
+
+###### 6.99
+
+Al usar 
+
+`file hello_world.py`
+
+Retorna que es un archivo de tipo ASCII. Luego, al agregar "#!/bin/python", retorna que es 
+script de Python y que es un archivo ASCII ejecutable.
+
+##### 6.100
 
 
 
