@@ -294,5 +294,5 @@ De esa forma, devuelve el segundo campo del archivo, que son las marcas.
 ##### 6.101
 
 * `comm` compara los datos de dos archivos ordenados en formato de columnas (1 = datos de FILE1, 2 = FILE2, 3 = FILE1 y FILE2).
-* `diff` 
+* `diff` similar a comm. Compara dos o más archivos que no necesariamente deben estar ordenados.
 
