@@ -282,6 +282,17 @@ script de Python y que es un archivo ASCII ejecutable.
 
 ##### 6.100
 
-?????????????????'
+```
+touch archivo.txt
+(Se edita el archivo)
+cut -d ',' -f 2 archivo.txt
+```
 
+De esa forma, devuelve el segundo campo del archivo, que son las marcas.
+
+
+##### 6.101
+
+* `comm` compara los datos de dos archivos ordenados en formato de columnas (1 = datos de FILE1, 2 = FILE2, 3 = FILE1 y FILE2).
+* `diff` 
 
