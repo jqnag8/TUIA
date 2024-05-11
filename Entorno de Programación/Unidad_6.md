@@ -9,7 +9,25 @@
 ##### 6.11 
 
 * `date` muestra la fecha y horario de hoy. 
-* `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana). ##### 6.12 * __CTRL-A__: inicio del comando. * __CTRL-E__: fin del comando. * __CTRL-K__: elimina de atras para adelante, hasta la posicion del puntero. * __ALT-D__:  elimina palabras. * __CTRL-W__: Opuesto a CTRL-K, elimina de adelante hacia atras. #### Sistema de Archivos ##### 6.43 * `-g` muestra la lista sin el apartado de dueño. * `-f` muestra el contenido de los directorios de manera recursiva. * `-t` ordena por fecha de crecion. * `-s` ordena por tamaño de uso en disco. 
+* `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana). 
+
+##### 6.12 
+
+* __CTRL-A__: inicio del comando. 
+* __CTRL-E__: fin del comando. 
+* __CTRL-K__: elimina de atras para adelante, hasta la posicion del puntero. 
+* __ALT-D__:  elimina palabras. 
+* __CTRL-W__: Opuesto a CTRL-K, elimina de adelante hacia atras. 
+
+
+#### Sistema de Archivos 
+
+##### 6.43 
+
+* `-g` muestra la lista sin el apartado de dueño. 
+* `-f` muestra el contenido de los directorios de manera recursiva. 
+* `-t` ordena por fecha de crecion. 
+* `-s` ordena por tamaño de uso en disco. 
 
 
 ##### 6.44 
