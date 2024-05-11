@@ -1,42 +1,4 @@
-# Parte II (Manejo de Bash)
-
-## Ejercicios de Unidad 6
-
-### Comandos Básicos
-
-#### Introducción
-
-##### 6.11
-
-* `date` muestra la fecha y horario de hoy.
-* `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
-
-
-##### 6.12
-
-* __CTRL-A__: inicio del comando.
-* __CTRL-E__: fin del comando.
-* __CTRL-K__: elimina de atras para adelante, hasta la posicion del puntero.
-* __ALT-D__:  elimina palabras.
-* __CTRL-W__: Opuesto a CTRL-K, elimina de adelante hacia atras.
-
-
-
-#### Sistema de Archivos
-
-##### 6.43
-
-* `-g` muestra la lista sin el apartado de dueño.
-* `-f` muestra el contenido de los directorios de manera recursiva.
-* `-t` ordena por fecha de crecion.
-* `-s` ordena por tamaño de uso en disco.
-
-
-##### 6.44
-
-`cd /bin` → `ls -h`
-
-
+# Parte II (Manejo de Bash) ## Ejercicios de Unidad 6 ### Comandos Básicos #### Introducción ##### 6.11 * `date` muestra la fecha y horario de hoy. * `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana). ##### 6.12 * __CTRL-A__: inicio del comando. * __CTRL-E__: fin del comando. * __CTRL-K__: elimina de atras para adelante, hasta la posicion del puntero. * __ALT-D__:  elimina palabras. * __CTRL-W__: Opuesto a CTRL-K, elimina de adelante hacia atras. #### Sistema de Archivos ##### 6.43 * `-g` muestra la lista sin el apartado de dueño. * `-f` muestra el contenido de los directorios de manera recursiva. * `-t` ordena por fecha de crecion. * `-s` ordena por tamaño de uso en disco. ##### 6.44 `cd /bin` -> `ls -h`
 ##### 6.45 
 
 `stat` es un comando que imprime por pantalla las propiedades de uns sistema de archivos o un archivo.
@@ -293,12 +255,32 @@ De esa forma, devuelve el segundo campo del archivo, que son las marcas.
 
 ##### 6.101
 
-* `comm` compara los datos de dos archivos ordenados en formato de columnas (1 = datos de FILE1, 2 = FILE2, 3 = FILE1 y FILE2).
+* `comm` compara los datos de dos archivos ordenados en formato de columnas 
+(1 = datos de FILE1, 2 = FILE2, 3 = FILE1 y FILE2).
 * `diff` similar a comm. Compara dos o más archivos que no necesariamente deben estar ordenados.
 
 ###### 6.102
 
 1. `(x|y)(x)`
 2. `x{2}`
-3. ``
+3. `^(x{2})*$`
+4. `^(x{1})*$`
 
+###### 6.103
+
+`grep .*[^;\n]`
+
+###### 6.104
+
+* `-A` Imprime _n_ líneas de texto después de las líneas concidentes.
+* `-B` imprime _n_ líneas de texto antes de las líneas coincidentes.
+
+###### 6.105
+
+El comando `nl` recibe un archivo como argumento y devuelve el contenido con las líneas enumeradas como salida estandar.
+
+
+###### 6.106
+
+El comando `fold` toma como argumento un archivo y devuelve el texto con las 
+líneas ajustadas a un ancho determinado como salida estandar
