@@ -301,6 +301,7 @@ De esa forma, devuelve el segundo campo del archivo, que son las marcas.
 2. `x{2}`
 3. `^(x{2})*$`
 4. `^(x{1})*$`
+(Sin Terminar)
 
 ###### 6.103
 
