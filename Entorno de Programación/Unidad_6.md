@@ -322,3 +322,51 @@ El comando `nl` recibe un archivo como argumento y devuelve el contenido con las
 
 El comando `fold` toma como argumento un archivo y devuelve el texto con las 
 líneas ajustadas a un ancho determinado como salida estandar
+
+
+##### Secuenciación, redirección y tuberías
+
+###### 6.120
+
+* `true` devuelve un valor de true. Se utiliza para dar a entender que algún comando terminó con exito.
+*  `false` devuelve un valor false. Retorna error para algún proceso.
+
+###### 6.121
+
+`cat archivo* | tee log.txt`
+
+###### 6.122
+
+imprime por pantalla un 2 seguido de los archivos del directorio y al final, un 3. 
+Luego guarda la salida en un archivo llamado 10
+
+###### 6.123
+
+`<` toma los datos de un archivo para luego pasarlos como argumentos de un comando.
+
+`cat < archivo1 > archivo2` guarda el contenido de archivo1 en archivo2.
+
+###### 6.124
+
+`> archivo.txt`
+
+
+###### 6.125
+
+`echo {a..z}{a..z}{a..z}{a..z} > archivo.txt`
+
+**Peso** = 2.2Mb
+
+
+###### 6.126
+
+(buscar un directorio con archivos .jpg)
+
+`find *.jpg > archivo.txt`
+
+
+###### 6.127
+
+```
+echo {0..9}{0..9} > archivo.txt
+```
