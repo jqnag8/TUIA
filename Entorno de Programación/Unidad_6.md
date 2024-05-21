@@ -377,4 +377,7 @@ cat archivo.txt | tr ' ' '\n' | tail -n 1
 
 ###### 6.128
 
+Se crea un archivo con más de 3 líneas...
+`cat -n archivo.txt | grep 3`
 
+###### 6.129
