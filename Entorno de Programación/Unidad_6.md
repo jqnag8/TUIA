@@ -400,3 +400,17 @@ Se crea un archivo con más de 3 líneas...
 ##### 6.133
 
 `history | grep cd | wc -l`
+
+##### 6.134
+
+`ls /usr/share/doc | grep GNU | wc -l`
+
+##### 6.135
+
+`(echo "primera linea" ; cat archivo.txt) | tee archivo.txt`
+
+##### 6.136
+
+1. Shell ejecutará a, b, e, f (4).
+2. Shell ejecutará a, b, c, d, f (5).
+3. Shell ejecutará a, b, c, e y f (5).
