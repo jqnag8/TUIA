@@ -265,11 +265,11 @@ Luego hago cambios de ese archivo con otra aplición, y cuando guardo los cambio
 El comando `uniq` no muestra palabras repetidas porque las líneas repetidas no son consecutivas.
 
 
-###### 6.98
+##### 6.98
 
 No entendí como funciona strings. Devuelve texto sin sentido. Si uso `file` si puede ver la cámara.
 
-###### 6.99
+##### 6.99
 
 Al usar 
 
