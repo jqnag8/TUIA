@@ -1,6 +1,6 @@
 # Unidad 6: Manejo de bash
 
-### Comandos Básicos 
+## Comandos Básicos 
 
 ### Introducción 
 
