@@ -399,4 +399,4 @@ Se crea un archivo con más de 3 líneas...
 
 ##### 6.133
 
-history | grep cd | wc -l
+`history | grep cd | wc -l`
