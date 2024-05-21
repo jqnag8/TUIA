@@ -369,4 +369,12 @@ Luego guarda la salida en un archivo llamado 10
 
 ```
 echo {0..9}{0..9} > archivo.txt
+**Para devolver el máximo:**
+cat archivo.txt | tr ' ' '\n' | head -n 1
+**Para devolver el mínimo**
+cat archivo.txt | tr ' ' '\n' | tail -n 1
 ```
+
+###### 6.128
+
+
