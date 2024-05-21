@@ -383,4 +383,6 @@ Se crea un archivo con más de 3 líneas...
 
 ##### 6.129
 
+`find /ubicacion/de/directorio -type f -exec wc -l {} + | sort | tail -n 1`
+
 
