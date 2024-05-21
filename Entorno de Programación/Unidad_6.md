@@ -388,3 +388,15 @@ Se crea un archivo con más de 3 líneas...
 ##### 6.130
 
 `find -type d | wc -l`
+
+##### 6.131
+
+?????
+
+##### 6.132
+
+?????
+
+##### 6.133
+
+history | grep cd | wc -l
