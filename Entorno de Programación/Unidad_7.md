@@ -65,6 +65,14 @@ disown 6795
 3. Le pasamos al comando `disown` el PID del proceso firefox para eliminar la asociación del comando `firefox` en la sesión de shell actual.
  
 
+## Gestión
+
+### Ejercicio 7.34
+
+Los comandos son Built-in de Bash, por lo tanto no existe algún archivo ejecutable que el comando `which` pueda encontrar.
+
+
+### Ejercicio 7.35
 
 
  
