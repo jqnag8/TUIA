@@ -50,7 +50,20 @@ Para solucionarlo, se puede hacer
 
 5. Para reanudar el proceso, usamos el comando `kill -SIGCONT 4873`
 
-6. Para interrumpir el proceso, usamos `kill -SIGTSTP 4873`
+6. Para interrumpir el proceso, usamos `kill -SIGTINT 4873`
+
+### Ejercicio 7.28
+
+```
+firefox &
+ps
+disown 6795
+```
+
+1. & indica que lo ejecute en segundo plano
+2. `ps` para mostrar información acerca de los procesos en segundo plano
+3. Le pasamos al comando `disown` el PID del proceso firefox para eliminar la asociación del comando `firefox` en la sesión de shell actual.
+ 
 
 
 
