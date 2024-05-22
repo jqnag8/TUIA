@@ -37,3 +37,21 @@ Para solucionarlo, se puede hacer
 
 
 ## Procesos y Tareas
+
+### Ejercicio 7.27
+
+1. `sleep 1d`
+
+2. En otra terminal, ejecutamos`htop` o `top` para luego buscar el PID del proceso sleep. Una vez encontrado (4873),
+
+3. `kill -SIGTSTP 4873`
+
+4. Volvemos a la terminal anterior, y ejecutamos `jobs` para ver que efectivamente el proceso está detenido.
+
+5. Para reanudar el proceso, usamos el comando `kill -SIGCONT 4873`
+
+6. Para interrumpir el proceso, usamos `kill -SIGTSTP 4873`
+
+
+
+ 

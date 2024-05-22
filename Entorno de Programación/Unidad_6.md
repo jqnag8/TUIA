@@ -13,8 +13,8 @@
 * __CTRL-A__: inicio del comando. 
 * __CTRL-E__: fin del comando. 
 * __CTRL-K__: elimina de atras para adelante, hasta la posicion del puntero. 
-* __ALT-D__:  elimina palabras. 
-* __CTRL-W__: Opuesto a CTRL-K, elimina de adelante hacia atras. 
+* __ALT-D__:  elimina palabras, desde la posicion del puntero hasta el final de la palabra. 
+* __CTRL-W__: Similar a ALT-D, elimina desde la posicion del puntero hasta el inicio de la palabra.
 
 
 ## Sistema de Archivos 
