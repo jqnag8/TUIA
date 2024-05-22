@@ -18,3 +18,22 @@ El comando no funcina porque no tenemos los permisos de administrador.
 Para solucionarlo, se puede hacer
 
 `sudo useradd visitante`
+
+### 7.18
+
+`sudo usermod -s bash visitante`
+
+### 7.19
+
+?????
+
+### 7.20
+
+`useradd -m visitante`
+
+### 7.21
+
+?????
+
+
+## Procesos y Tareas
