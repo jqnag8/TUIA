@@ -174,8 +174,7 @@ Siendo `-7` la opción que indica que debe buscar archivos que tengan una modifi
 
 ### 6.61
 
-???
-
+`find -empty d -exec cp -r {} {}-copia \;`
 
 ### 6.62
 

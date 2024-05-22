@@ -25,7 +25,8 @@ Para solucionarlo, se puede hacer
 
 ### 7.19
 
-?????
+ll / | grep -E "^........w"
+
 
 ### 7.20
 
