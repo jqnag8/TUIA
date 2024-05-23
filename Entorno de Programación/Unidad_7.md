@@ -126,7 +126,7 @@ Bombas Zip hechas por *David Fifield*
 * zbxl.zip, con un tamaño de 4.5 PB comprimidos a través del algoritmo Zip64 en un archivo de 46 MB.
 
 **EJECUTAR EN UNA MÁQUINA VIRTUAL**
-Usamos lUbuntu para ejecutar la bomba zip. Descargamos la (bomba zip de tamaño 281TB)[https://www.bamsoftware.com/hacks/zipbomb/] en un archivo de 10mb.
+Usamos lUbuntu para ejecutar la bomba zip. Descargamos la [bomba zip de tamaño 281TB](https://www.bamsoftware.com/hacks/zipbomb/) en un archivo de 10mb.
 
 ```
   
