@@ -135,7 +135,7 @@ Bombas Zip hechas por *David Fifield*:
 
 ### Ejercicio 7.61
 
-Crear un alias mediante el comando alis es crear un atajo de un comando en concreto de forma temporal. Mientras que un enlace a un archivo, es un acceso directo que puede estar en cualquier parte del sistema de archivos, permitiendonos acceder al archivo que apunta.
+Crear un alias mediante el comando alias es crear un atajo de un comando en concreto de forma temporal. Mientras que un enlace a un archivo, es un acceso directo que puede estar en cualquier parte del sistema de archivos, permitiendonos acceder al archivo que apunta.
 
 ### Ejercicio 7.62
 
@@ -144,5 +144,22 @@ El comando `type` muestra el tipo de comando que se le ingresa.
 * `which ls` imprime la ruta de instalación del comando.
 * `type ls` imprime el tipo de comando que es `ls` (alias de `ls --color=auto`).
 
+### Ejercicio 7.63
 
+* **Tiempo real**: en ambos casos son parecidos.
+* **Tiempo de usuario**: el tiempo de usuario es de 0 con el comando `time sleep`. En cambio, con `python3` el tiempo es similar al tiempo real.
+* **Tiempo de sistema**: en ambos casos es casi nulo
+
+### Ejercicio 7.64
+
+`watch cat archivo.txt`
+
+* De esta forma, `cat archivo` será ejecutado cada dos segundos, permitiendonos ver el estado del contenido de archivo.txt.
+
+### Ejercicio 7.65
+
+?????
+
+
+### Ejercicio 7.66
 
