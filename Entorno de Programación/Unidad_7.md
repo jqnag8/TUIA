@@ -25,12 +25,19 @@ Para solucionarlo, se puede hacer
 
 ### 7.19
 
-ll / | grep -E "^........w"
+`ll / | grep -E "^........w"`
+
+Usamos `ll` para listar todos los archivos de la carpeta raíz de forma extensa. Luego, el resultado es ingresado a `grep` para que filtre los archivos los cuales Visitante puede escribir mediante una expresion regular
+
+* Expresión Regular: indicamos ^ para que busque al inicio de la línea. Luego cada . equivale a un símbolo o letra que determina el tipo de archivo o permisos. Finalmente indicamos una 'w' para indicar que queremos que en los permisos de usuario esté habilitada la escritura de archivos. 
+
 
 
 ### 7.20
 
 `useradd -m visitante`
+
+La opción `-m` hace que el comando cree un directorio Home de forma automática
 
 ### 7.21
 
@@ -75,5 +82,33 @@ Los comandos son Built-in de Bash, por lo tanto no existe algún archivo ejecuta
 
 ### Ejercicio 7.35
 
+* `tldr` funciona similar a `man` pero intenta ser más explicativo, dando ejemplos de uso.
+* `shellcheck` verifica si un archivo .sh (shell script) tiene errores.
 
- 
+### Ejercicio 7.36
+
+`neofetch` es un script personalizable que muestra información del sistema.
+
+### Ejercicio 7.37
+
+```
+  sudo apt remove neofetch
+  which neofetch
+```
+
+1. Removemos el comando `neofetch` con permisos de administrador.
+2. Verificamos si existe la ruta donde se almacena el comando con `which`.
+
+### Ejercicio 7.38
+
+????
+
+
+### Ejercicio 7.39
+
+* `uptime` imprime cuánto tiempo estuvo prendido el sitema.
+* `uname` imprime información del sistema.
+
+## Compresión y Backup
+
+### Ejercicio 
