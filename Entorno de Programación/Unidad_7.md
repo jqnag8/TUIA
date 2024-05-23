@@ -130,3 +130,19 @@ Bombas Zip hechas por *David Fifield*:
 `cd /ruta/de/descarga && unzip zblg.zip`
 
 * Usamos && para ejecutar los comandos en simultáneo.
+
+## Otros Comandos
+
+### Ejercicio 7.61
+
+Crear un alias mediante el comando alis es crear un atajo de un comando en concreto de forma temporal. Mientras que un enlace a un archivo, es un acceso directo que puede estar en cualquier parte del sistema de archivos, permitiendonos acceder al archivo que apunta.
+
+### Ejercicio 7.62
+
+El comando `type` muestra el tipo de comando que se le ingresa.
+
+* `which ls` imprime la ruta de instalación del comando.
+* `type ls` imprime el tipo de comando que es `ls` (alias de `ls --color=auto`).
+
+
+
