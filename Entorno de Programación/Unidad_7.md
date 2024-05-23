@@ -120,7 +120,7 @@ Los comandos son Built-in de Bash, por lo tanto no existe algún archivo ejecuta
 
 **Bomba Zip** es una un archivo malicioso que pretende romper el algortimo de compresión de `zip`, guardando grandes cantidades de datos.
 
-Bombas Zip hechas por *David Fifield*
+Bombas Zip hechas por *David Fifield*:
 * zbsm.zip, con un tamaño de 5.5 GB comprimidos en un archivo de 42 KB.
 * zblg.zip, con un tamaño de 281 TB comprimidos en un archivo de 10 MB.
 * zbxl.zip, con un tamaño de 4.5 PB comprimidos a través del algoritmo Zip64 en un archivo de 46 MB.
