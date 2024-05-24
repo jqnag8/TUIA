@@ -190,8 +190,6 @@ Elimina todos los archivos con la extensión `.txt`
 ```
 cd /bin
 ls ??
-ar  bc  cp  dd  du  ex  hd  ip  ln  ls  mv  nl  od  ps  sg  ss  tr  ul  wc
-as  cc  dc  df  ed  gs  id  ld  lp  mt  nc  nm  pr  rm  sh  su  ua  vi  xz
 ```
 
 
