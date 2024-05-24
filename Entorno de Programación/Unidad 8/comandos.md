@@ -2,9 +2,25 @@
 
 ## Introducción
 
+### Ejercicio 8.4
 ```
   touch script.py
   chmod +x script.py
   /.script.py
 ```
 * **Observación**: agregar shebang, si no, no funcionará.
+
+### Ejercicio 8.8
+
+La variable *CDPATH* guarda una lista de directorios que el comando `cd` usará para encontrar la ruta al directorio a la que el usuario quiere cambiar.
+
+
+### Ejercicio 8.9
+
+```
+echo $$
+ps
+```
+
+* verificar si los *PID* de los emuladores de terminal son iguales 
+
