@@ -19,11 +19,11 @@ Para solucionarlo, se puede hacer
 
 `sudo useradd visitante`
 
-### 7.18
+### Ejercicio 7.18
 
 `sudo usermod -s bash visitante`
 
-### 7.19
+### Ejercicio 7.19
 
 `ll / | grep -E "^........w"`
 
@@ -33,13 +33,13 @@ Usamos `ll` para listar todos los archivos de la carpeta raíz de forma extensa.
 
 
 
-### 7.20
+### Ejercicio 7.20
 
 `useradd -m visitante`
 
 La opción `-m` hace que el comando cree un directorio Home de forma automática
 
-### 7.21
+### Ejercicio 7.21
 
 ?????
 
