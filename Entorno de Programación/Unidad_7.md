@@ -116,8 +116,7 @@ Los comandos son Built-in de Bash, por lo tanto no existe algún archivo ejecuta
 * `zip` se usa para empaquetar y comprimir archivos.
 * `unzip` se usa para descomprimir, listar o comprobar archivos .zip.
  
-### Ejercicio 7.51
-
+### Ejercicio 7.51 (EJECUTAR EN UNA MÁQUINA VIRTUAL!!)
 **Bomba Zip** es una un archivo malicioso que pretende romper el algortimo de compresión de `zip`, guardando grandes cantidades de datos.
 
 Bombas Zip hechas por *David Fifield*:
@@ -125,7 +124,7 @@ Bombas Zip hechas por *David Fifield*:
 * zblg.zip, con un tamaño de 281 TB comprimidos en un archivo de 10 MB.
 * zbxl.zip, con un tamaño de 4.5 PB comprimidos a través del algoritmo Zip64 en un archivo de 46 MB.
 
-**(EJECUTAR EN UNA MÁQUINA VIRTUAL!!)** Usamos lUbuntu para ejecutar la bomba zip. Descargamos la [bomba zip de tamaño 281TB en un archivo de 10mb](https://www.bamsoftware.com/hacks/zipbomb/).
+Usamos lUbuntu para ejecutar la bomba zip. Descargamos la [bomba zip de tamaño 281TB en un archivo de 10mb](https://www.bamsoftware.com/hacks/zipbomb/).
 
 `cd /ruta/de/descarga && unzip zblg.zip`
 
