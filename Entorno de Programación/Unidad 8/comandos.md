@@ -24,3 +24,9 @@ ps
 
 * verificar si los *PID* de los emuladores de terminal son iguales 
 
+
+### Ejercicio 8.16
+
+`PS1="\w >"`
+
+* *\w* muestra el directorio actual
