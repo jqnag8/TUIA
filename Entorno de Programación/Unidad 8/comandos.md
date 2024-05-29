@@ -30,3 +30,16 @@ ps
 `PS1="\w >"`
 
 * *\w* muestra el directorio actual
+
+### Ejercicio 8.38
+
+`echo $PATH | tr ':' '\n'
+
+### Ejercicio 8.39
+
+`find -type f -exec du -h {} \; | sort | tail -n 1`
+
+
+### Ejercicio 8.40
+
+
