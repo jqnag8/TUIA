@@ -40,6 +40,11 @@ ps
 `find -type f -exec du -h {} \; | sort | tail -n 1`
 
 
-### Ejercicio 8.40
+### Ejercicio 8.57 
+
+La variable de entorno *IFS* es la variable que almacena el caracter con el que delimita los textos.
+
+* Para iterar sobre una archivo CSV usamos la variable `IFS=','`
+* Para iterar sobre la variable *PATH*, usamos la variable `IFS=':'`
 
 
