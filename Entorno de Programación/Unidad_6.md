@@ -112,7 +112,7 @@ Para evitar la confirmación se podría usar el comando
 mkdir cuartos
 cd cuartos
 touch argentina
-mkdir francia
+touch francia
 mkdir semi1
 touch semi1/argentina
 touch semi1/croacia
