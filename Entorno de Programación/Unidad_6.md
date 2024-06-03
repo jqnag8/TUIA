@@ -91,7 +91,7 @@ Una Solución puede ser:
 
 ```
 mkdir carpeta1
-mkdria carpeta1/carpeta2
+mkdir carpeta1/carpeta2
 ```
 
 
