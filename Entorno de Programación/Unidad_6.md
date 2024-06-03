@@ -30,6 +30,7 @@
 ### 6.44 
 
 `ls -h /bin`
+* La carpeta /bin guarda el binario de todos los comandos
 
 
 ### 6.45 
