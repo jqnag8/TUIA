@@ -127,11 +127,7 @@ tree
 
 ```
 mkdir directorio_nuevo
-cd /.../cuartos/
-cp argentina /.../directorio_nuevo/argentinav2
-cp francia /.../directorio_nuevo/franciav2
-cp -r semi1 /.../directorio_nuevo/semi1v2
-cp -r semi2 /.../directorio_nuevo/semi2v2
+cp -r /.../cuartos /.../directorio_nuevo
 ```
 
 
