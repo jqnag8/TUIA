@@ -294,7 +294,7 @@ De esa forma, devuelve el segundo campo del archivo, que son las marcas.
 
 ### 6.103
 
-`grep .*[^;\n]`
+`grep .*[^;]$`
 
 ### 6.104
 
