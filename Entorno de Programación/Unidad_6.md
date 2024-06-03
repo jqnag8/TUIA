@@ -51,8 +51,7 @@ En total hay 3 carpetas (ocultas por empezar con ".").
 
 ### 6.48
 
-En el caso de que exista una directorio la fecha y horario de hoy.
-* `cal` muestra un calendario resaltando la fecha de hoy (`ncal` muestra otro layout, marcando el día de la semana.
+En el caso de que exista un directorio con el nombre "cd"
 
 
 ### 6.49
