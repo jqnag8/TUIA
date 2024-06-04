@@ -354,7 +354,7 @@ Luego guarda la salida en un archivo llamado 10
 
 (buscar un directorio con archivos .jpg)
 
-`find / -type f *.jpg > archivo.txt`
+`find / -type f -name *.jpg > archivo.txt`
 
 
 ### 6.127
