@@ -319,6 +319,8 @@ líneas ajustadas a un ancho determinado como salida estandar
 * `true` devuelve un valor de true. Se utiliza para dar a entender que algún comando terminó con exito.
 *  `false` devuelve un valor false. Retorna error para algún proceso.
 
+`(true && false) || echo "el comando no se ejecutó"`
+
 ### 6.121
 
 `cat archivo* | tee log.txt`
