@@ -323,7 +323,8 @@ líneas ajustadas a un ancho determinado como salida estandar
 
 ### 6.121
 
-`cat archivo* | tee log.txt`
+`cat * | tee log.txt`
+Solución alternativa: `find -type f -exec cat {} \; > archivo.txt`
 
 ### 6.122
 
