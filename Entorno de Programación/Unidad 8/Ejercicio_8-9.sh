@@ -1,6 +1,6 @@
 #! /bin/bash
 
-PS_PID=$(ps | grep "bash" | cut -d " " -f 3)
+PS_PID=$(ps | grep "bash" | cut -d " " -f 4)
 
 echo "$PS_PID $$"
 if [ $PS_PID -eq $$ ]; then
