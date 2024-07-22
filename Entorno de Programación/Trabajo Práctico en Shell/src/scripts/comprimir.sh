@@ -2,8 +2,9 @@
 LISTA_ARCHIVOS=$(ls -A)
 
 if [ -z "$LISTA_ARCHIVOS" ]; then # Se verifica si la carpeta está vacía
-  echo "La carpeta está vacía. No hay nada que comprimir" && exit 1
+  echo "La carpeta está vacía. No hay nada que comprimir." && exit 1
 else
+  echo "Creando archivo comprimido..."
   if [ -e ./suma_ver.txt ]; then
     rm suma_ver.txt  # Borra el suma_ver.txt viejo 
   elif [ -e ./backup.tar ]; then

@@ -6,11 +6,12 @@ listar_elementos(){
 LISTA_JPG_ACTUAL=$(listar_elementos . .jpg) # Lista los .jpg dentro de .
 
 if [ -z  "$LISTA_JPG_ACTUAL" ]; then
-  echo "No existen imágenes para analizar" && exit 1
-else 
+  echo "No existen imágenes para analizar." && exit 1
+else
   for imagen in $LISTA_JPG_ACTUAL; do
     if [ -e ./"$imagen".tag ]; then
       continue
+
     else
       mkdir -p ./temp ; cp ./"$imagen".jpg ./temp # Aqui se guardaran las imagenes que seran analizadas por yolo. Se crea solo si no existe.
     fi
@@ -18,19 +19,20 @@ else
   # Generamos etiquetas
   if [ -d ./temp ] ; then
     LISTA_IMAGENES_TEMP=$(listar_elementos ./temp .jpg) # lista los .jpg en /temp
-  
+
+    echo "Etiquentado imágenes nuevas..."
     yolo predict source=./temp > ./temp/temp.txt
   
     for imagen in $LISTA_IMAGENES_TEMP; do
       cant_palabras=$(grep "$imagen" ./temp/temp.txt | wc -w ) # Se cuentan las palabras de la linea donde se analiza la imagen
       grep "$imagen" ./temp/temp.txt | cut -d ' ' -f 5-$((cant_palabras - 1)) > ./"$imagen".tag # Devuelve los tags
     done
-    echo "Las etiquetas fueron creadas correctamente" && rm -rf ./temp && exit 0
+    echo "Las etiquetas fueron creadas correctamente." && rm -rf ./temp && exit 0
+
   else 
-    echo "Todas las imágenes ya están etiquetadas" && exit 2
+    echo "Todas las imágenes ya están etiquetadas." && exit 2
   fi
 fi
-
 
 # ------ CONSIGNAS ------
 # Debe crearse un archivo con el mismo nombre que la imagen, pero extensión .tag # HECHO
