@@ -20,4 +20,3 @@ fi
 # El nombre del archivo deberá ser su suma de verificación y debe terminar en .jpg # HECHO
 # Asegúrese de devolver un valor de salida acorde a la situación. # HECHO
 # TODO redireccionar las descargas a carpeta imágenes con Docker # HECHO
-
