@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kill -s SIGTSTP $$
+kill -s SIGNSTP $$
