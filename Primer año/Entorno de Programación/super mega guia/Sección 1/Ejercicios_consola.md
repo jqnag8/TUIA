@@ -1,3 +1,6 @@
+---
+mainfont: monospace
+---
 # Sección 1
 
 ### Ejercicio 0
