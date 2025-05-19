@@ -1,0 +1,23 @@
+Ejemplo de texto con números de teléfono:
+
+    Contacto de soporte técnico: 123-456-7890.
+
+    Llama a ventas al 555-123-4567 para más información.
+
+    Urgencias: 911-911-9911 (solo EE.UU.).
+
+    Reservas al 800-555-1234 (línea gratuita).
+
+    Número ficticio: 987-654-3210.
+
+    Oficina principal: 222-333-4444.
+
+    Departamento de RH: 777-888-9999.
+
+    Prueba con este: 101-202-3030.
+
+    Número internacional (falso): 001-234-5678.
+
+    Servicio al cliente: 321-654-0987.
+
+    3334-333-3333
