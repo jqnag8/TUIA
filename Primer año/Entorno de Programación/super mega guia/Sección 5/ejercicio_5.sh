@@ -1,3 +1,8 @@
-#!/bin/bash
+#! /bin/bash
 
-([ -e "$1" ] && (echo "El archivo existe" ; exit 0)) || (echo "El archivo no existe" ; exit 1)
+if [ -e "$1" ]
+then
+    echo "El archivo existe"
+else
+    echo "El archivo no existe"
+fi

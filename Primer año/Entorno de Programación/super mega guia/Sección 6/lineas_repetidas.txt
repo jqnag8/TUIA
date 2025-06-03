@@ -1,0 +1,10 @@
+Esta es una línea repetida.
+Esta es otra línea.
+Esta es una línea repetida.
+Esta es la tercera línea.
+Esta es otra línea.
+Esta es la tercera línea.
+Esta es una línea repetida.
+Esta es una línea única.
+Esta es otra línea.
+Esta es la última línea.

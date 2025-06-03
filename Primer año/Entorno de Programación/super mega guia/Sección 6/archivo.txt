@@ -1,0 +1,7 @@
+Este es un ejemplo de archivo de texto.
+Contiene varias líneas de texto para probar los ejercicios de bash.
+Se puede utilizar para buscar palabras, contar líneas, etc.
+
+123
+456
+789
