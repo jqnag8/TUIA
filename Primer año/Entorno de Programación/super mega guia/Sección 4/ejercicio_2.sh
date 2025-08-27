@@ -10,4 +10,3 @@ do
 done
 
 echo "La suma total es $suma"
-exit 0

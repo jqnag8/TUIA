@@ -1,3 +1,3 @@
 #!/bin/bash
 
-grep -Eo "manzan(as?|ita)" texto.txt
+grep -oE "manzan(a(s|r)?|itas?)" texto.txt

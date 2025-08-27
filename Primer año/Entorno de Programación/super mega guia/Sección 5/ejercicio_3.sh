@@ -6,8 +6,6 @@ then
     exit 1
 fi
 
-lineas_archivo=$(wc -l "$1" | cut -d ' ' -f 1)
+lineas_archivo=$(wc -l < "$1")
 
 echo "El archivo tiene $lineas_archivo lineas"
-
-exit 0
