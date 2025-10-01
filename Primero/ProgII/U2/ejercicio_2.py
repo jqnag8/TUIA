@@ -1,3 +1,4 @@
+
 from typing import Any
 
 class _Nodo:
@@ -123,7 +124,7 @@ class ListaEnlazada:
             resultado += f"{nodo.dato}, "
             nodo = nodo.prox
 
-        resultado = resultado[: len(resultado) - 2]
+        resultado = resultado[:-2]
         resultado += "]"
         return resultado
 
@@ -160,6 +161,19 @@ class ListaEnlazada:
 
         return None
 
+    def extend(self, lista_1) -> None:
+        """
+            Enlaza la lista a otra
+        """
+        nodo = self.prim
+
+        for _ in range(self.len - 1): # Recorremos la ListaEnlazada hasta el último nodo
+            nodo = nodo.prox
+
+        nodo.prox = lista_1.prim # Enlaza el último elemento de la primera lista con el primero de la segunda
+        self.len += lista_1.len
+
+        return None
             
 
 # TEST
@@ -168,4 +182,11 @@ lst_nodo_1.insert(0, 10)
 print(lst_nodo_1.__len__())
 print(lst_nodo_1.__str__())
 lst_nodo_1.append(20)
+print(lst_nodo_1)
+
+lst_nodo_2 = ListaEnlazada()
+lst_nodo_2.insert(0, 50)
+print(lst_nodo_2.__len__())
+print(lst_nodo_2.__str__())
+lst_nodo_1.extend(lst_nodo_2)
 print(lst_nodo_1)

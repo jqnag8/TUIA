@@ -1,3 +1,5 @@
+
+
 from typing import Any
 
 class _Nodo:
@@ -123,7 +125,7 @@ class ListaEnlazada:
             resultado += f"{nodo.dato}, "
             nodo = nodo.prox
 
-        resultado = resultado[: len(resultado) - 2]
+        resultado = resultado[:-2]
         resultado += "]"
         return resultado
 
@@ -160,6 +162,40 @@ class ListaEnlazada:
 
         return None
 
+    def extend(self, lista_1) -> None:
+        """
+            Enlaza la lista a otra
+        """
+        nodo = self.prim
+
+        for _ in range(self.len - 1): # Recorremos la ListaEnlazada hasta el último nodo
+            nodo = nodo.prox
+
+        nodo.prox = lista_1.prim # Enlaza el último elemento de la primera lista con el primero de la segunda
+        self.len += lista_1.len
+
+        return None
+
+    def remover_todos(self, dato: Any) -> int:
+        """
+            Remueve todas las apariciones del 'dato' en la ListaEnlazada
+        """
+        nodo: _Nodo = self.prim
+        contador: int = 0
+        pos_apariciones: list[int] = list() # Guarda las posiciones en las que aparece 'dato'
+
+        while nodo is not None:
+            if nodo.dato == dato:
+                pos_apariciones += [contador]
+            nodo = nodo.prox
+            contador += 1
+
+        for pos in pos_apariciones[::-1]:
+            self.pop(pos)
+
+        return len(pos_apariciones)
+
+            
             
 
 # TEST
@@ -168,4 +204,17 @@ lst_nodo_1.insert(0, 10)
 print(lst_nodo_1.__len__())
 print(lst_nodo_1.__str__())
 lst_nodo_1.append(20)
+print(lst_nodo_1)
+
+lst_nodo_2 = ListaEnlazada()
+lst_nodo_2.insert(0, 50)
+print(lst_nodo_2.__len__())
+print(lst_nodo_2.__str__())
+lst_nodo_1.extend(lst_nodo_2)
+lst_nodo_1.insert(1, 100)
+lst_nodo_1.append(100)
+lst_nodo_1.append(100)
+lst_nodo_1.append(100)
+print(lst_nodo_1)
+lst_nodo_1.remover_todos(100)
 print(lst_nodo_1)
