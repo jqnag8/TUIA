@@ -1,7 +1,3 @@
-
-
-
-
 from typing import Any
 
 class _Nodo:
@@ -220,7 +216,26 @@ class ListaEnlazada:
         """
             Revierte el orden de la ListaEnlazada
         """
-        
+        m: int = 0
+        n: int = self.len
+
+        while m < n:
+            nodo_1: _Nodo = self.prim
+            nodo_2: _Nodo = self.prim
+
+            for _ in range(m):
+                nodo_1 = nodo_1.prox
+
+            for _ in range(n - 1):
+                nodo_2 = nodo_2.prox
+
+            temp: Any = nodo_1.dato
+            nodo_1.dato = nodo_2.dato
+            nodo_2.dato = temp
+            m += 1
+            n -= 1
+
+        return None
             
             
 
@@ -244,5 +259,9 @@ lst_nodo_1.append(100)
 print(lst_nodo_1)
 lst_nodo_1.remover_todos(100)
 print(lst_nodo_1)
-lst_nodo_1.duplicar(30)
+# lst_nodo_1.duplicar(30)
+# print(lst_nodo_1)
+lst_nodo_1.append(100)
+lst_nodo_1.rev()
+
 print(lst_nodo_1)
