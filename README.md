@@ -4,8 +4,9 @@ Repositorio donde subo las ejercitaciones de todas aquellas materias que requier
 
 ## Primer Año
 ### Primer Cuatrimestre
-* [Entornos de Programación](https://github.com/jqnag8/TUIA/tree/main/Primero/EdP)
-* [Programación I](https://github.com/jqnag8/TUIA/tree/main/Primero/ProgI)
+* [Entornos de Programación](Primero/EdP)
+* [Programación I](Primero/ProgI)
 
 ### Segundo Cuatrimestre
-* [Programación 2](https://github.com/jqnag8/TUIA/tree/main/Primero/ProgII)
+* [Programación 2](Primero/ProgII)
+* [Bases de Datos I](Primero/BdDI)
