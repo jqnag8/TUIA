@@ -1,6 +1,6 @@
 from typing import Any
 
-class Pila:
+class Stack:
     def __init__(self):
         self.items = []
 
