@@ -44,7 +44,7 @@ class Tree:
 
         self.left.buscar(dato)
         self.right.buscar(dato)
-
+aaaaaa
 
             
             
