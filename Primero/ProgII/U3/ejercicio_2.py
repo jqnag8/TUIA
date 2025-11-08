@@ -35,18 +35,29 @@ class Tree:
 
     def buscar(self, dato: Any) -> bool:
         """
-            Retorna True en caso de que dato se encuentre en el árbol
+            Retorna True en caso de que 'dato' se encuentre en el árbol
         """
-        if self.cargo is None:
-            return False
-        elif self.cargo == dato:
+        if self.cargo == dato:
             return True
+        if self.left:
+            return self.left.buscar(dato)
+        if self.right:
+            return self.right.buscar(dato)
 
-        self.left.buscar(dato)
-        self.right.buscar(dato)
-aaaaaa
+        return False
 
-            
-            
-    
+    def altura(self) -> int:
+        """
+            Calcula la altura del árbol
+        """
 
+        altura: int = 1
+        altura_temp: int = 1 #Guarda el valor de la altura actual
+        
+        if self.left:
+            altura += self.left.altrua()
+        if self.right:
+            altura += self.right.altura()
+
+        return altura
+        
