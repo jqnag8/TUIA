@@ -2,7 +2,6 @@ CREATE DATABASE P2_EJ1;
 
 USE P2_EJ1;
 
-
 CREATE TABLE EMPLEADO (
 	Legajo varchar(5),
 	Nombre varchar(80),
@@ -30,6 +29,6 @@ CREATE TABLE SERVICIO_TECNICO (
 
 
 INSERT INTO SERVICIO_TECNICO 
-VALUES ('Juan Costas', 'San Martin 100', '3416255932', 'Produccion', 100000)
+VALUES ('Juan Costas', 'San Martin 100', '3', 'Logistica', 100000)
 
 SELECT * FROM SERVICIO_TECNICO
