@@ -50,14 +50,13 @@ class Tree:
         """
             Calcula la altura del árbol
         """
+        altura_izq: int = 1
+        altura_der: int = 1
 
-        altura: int = 1
-        altura_temp: int = 1 #Guarda el valor de la altura actual
-        
         if self.left:
-            altura += self.left.altrua()
+            altura_izq += self.left.altura()
         if self.right:
-            altura += self.right.altura()
+            altura_der += self.right.altura()
 
-        return altura
+        return max(altura_izq, altura_der)
         
