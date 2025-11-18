@@ -69,7 +69,7 @@ class Tree:
         print(self.cargo)
 
     # -- Iterativas --
-    def Pre_Order_Iter(self) -> None:
+    def pre_order_iter(self) -> None:
         """Realiza un recorrido Pre Order por el árbol"""
         p = Pila()
 
@@ -86,7 +86,7 @@ class Tree:
                 p.push(nodo_actual.left)
 
 
-    def In_Order_Iter(self) -> None:
+    def in_order_iter(self) -> None:
         """Realiza un recorrido In Order por el árbol"""
         p = Pila()
         nodo_actual = self
@@ -94,8 +94,8 @@ class Tree:
 
         while not p.is_empty():
             while nodo_actual is not None and nodo_actual.left is not None:
-                p.push(nodo_actual.left)
                 nodo_actual = nodo_actual.left
+                p.push(nodo_actual)
            
             nodo_visitar = p.pop()
             print(nodo_visitar.cargo)
@@ -105,20 +105,26 @@ class Tree:
                 p.push(nodo_actual)
             
 
-    def Post_Order_Iter(self) -> None:
+    def post_order_iter(self) -> None:
         """Realiza un recorrido Post Order por el árbol"""
-        sl = self.left
-        sr = self.right
+        p_resultado = Pila()
+        p_trabajo = Pila()
+        p_trabajo.push(self)
 
-        if sl is not None:
-            sl.Post_Order()
+        while not p_trabajo.is_empty():
+            nodo_actual = p_trabajo.pop()
+            p_resultado.push(nodo_actual)
+            
+            if nodo_actual.left is not None:
+                p_trabajo.push(nodo_actual.left)
 
-        if sr is not None:
-            sr.Post_Order()
+            if nodo_actual.right is not None:
+                p_trabajo.push(nodo_actual.right)
+           
+        while not p_resultado.is_empty:
+            nodo_imprimir = p_resultado.pop()
+            print(nodo_imprimir.cargo)
 
-        print(self.cargo)
-
-        
 
 # TEST
 tree_1 = Tree(10)
@@ -138,8 +144,8 @@ tree_7.Post_Order()
 
 print("Iterativos")
 print("Pre_Order: ")
-tree_7.Pre_Order_Iter()
+tree_7.pre_order_iter()
 print("In_Order: ")
-tree_7.In_Order_Iter()
-# print("Post_Order: ")
-# tree_7.Post_Order()
+tree_7.in_order_iter()
+print("Post_Order: ")
+tree_7.post_order_iter()
